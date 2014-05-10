@@ -7,7 +7,7 @@ int main(void) {
     printf("Case %zu:\n", casenum++);
     for (scanf("%zu", &n); n-- > 0 && scanf("%zu %zu\n", &a, &b); ) {
       min = a < b ? a : b;
-  	  max = a < b ? b : a;
+      max = a < b ? b : a;
       for (i = min, val = buff[min]; i <= max && i < l; i++)
         if (buff[i] != val) { puts("No"); break; }
         else if (i == max)  { puts("Yes");       }	  
