@@ -1,4 +1,3 @@
-// 10324 - Zeros and Ones
 #include <stdio.h>
 int main(void) {
   size_t casenum = 1, n, a, b, min, max, i, l;

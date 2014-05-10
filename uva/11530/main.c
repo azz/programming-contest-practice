@@ -1,4 +1,3 @@
-// 11530 - SMS Typing
 #include <stdio.h>
 int main(void) {
     size_t n, l = 0, r, i, count, casenum = 1;
