@@ -23,14 +23,9 @@ int main(void) {
             for (j = 0; j < m; j++) {
                 if (g_field[i][j] != '*')
                     g_field[i][j] += 
-                        is_mine(i-1, j-1, n, m) + // top    left
-                        is_mine(i-1, j,   n, m) + // top    middle 
-                        is_mine(i-1, j+1, n, m) + // top    right
-                        is_mine(i,   j-1, n, m) + // middle left
-                        is_mine(i,   j+1, n, m) + // middle right
-                        is_mine(i+1, j-1, n, m) + // bottom left
-                        is_mine(i+1, j,   n, m) + // bottom middle
-                        is_mine(i+1, j+1, n, m);  // bottom right
+                        is_mine(i-1, j-1, n, m) + is_mine(i-1, j,   n, m) + is_mine(i-1, j+1, n, m) + 
+                        is_mine(i,   j-1, n, m) + /*  current position */   is_mine(i,   j+1, n, m) +
+                        is_mine(i+1, j-1, n, m) + is_mine(i+1, j,   n, m) + is_mine(i+1, j+1, n, m); 
                 cout << g_field[i][j];
             }
             cout << endl;
